@@ -1,6 +1,6 @@
 package project.bank;
 
-public class main {
+public class MainSarianna02 {
     public static void main(String[] args) {
         Bank myBank = new Bank();
 
