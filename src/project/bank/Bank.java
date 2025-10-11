@@ -10,7 +10,8 @@ public class Bank {
         count = 0;
     }
 
-    public void addAccount(Account account) {
+    public void addAccount(Account account) { // TODO should return boolean
+        // TODO data validation
         if (count < accounts.length) {
             accounts[count] = account;
             count++;
@@ -21,7 +22,8 @@ public class Bank {
         return count;
     }
 
-    public Account findAccountById(String id){
+    public Account findAccountById(String id){ // TODO should return int
+        // TODO data validation
         for(int i = 0; i < count; i++) {
             if (accounts[i].getAccountId().equals(id)) {
                 return accounts[i];
