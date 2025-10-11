@@ -4,13 +4,20 @@ public class Account {
 
     private String accountId;
     private String ownerName;
-    private double balcance;
+    private double balance;
     private String accountType;
 
-    public Account(String accountId, String ownerName, double balcance, String accountType){
+    // reformat long line for readability
+    public Account(
+        String accountId, 
+        String ownerName, 
+        double balance, String
+         accountType
+    ){
+        // TODO data validation
         this.accountId = accountId;
         this.ownerName = ownerName;
-        this.balcance = balcance;
+        this.balance = balance;
         this.accountType = accountType;
     }
 
@@ -23,7 +30,7 @@ public class Account {
     }
 
     public double getBalance(){
-        return balcance;
+        return balance;
     }
 
     public String getAccountType(){
